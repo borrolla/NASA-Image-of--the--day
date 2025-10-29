@@ -33,7 +33,7 @@ const displayImage = (data => {
         currentImageContainer.innerHTML = `
           <h3>${data.title}</h3>
           <p>${data.date}</p>
-          ${data.media_type === "image" ? `<img src="${data.url}" alt="${data.title}" width="80%" />` : `<iframe width="80%" height="200" src="${data.url}" frameborder="0"></iframe>`}
+          ${data.media_type === "image" ? `<img src="${data.url}" alt="${data.title}" width="60%" />` : `<iframe width="60%" height="100" src="${data.url}" frameborder="0"></iframe>`}
           <p>${data.explanation}</p>`;
       
 });
@@ -72,4 +72,5 @@ searchForm.addEventListener("submit", (e) => {
 
 ///Intit
 getCurrentImageOfTheDay();
+
 addSearchToHistory();
